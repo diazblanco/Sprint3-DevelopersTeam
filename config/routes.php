@@ -8,6 +8,7 @@
  * 
  * '/' => 'index#index',
  * '/calendar' => 'calendar#index'
+ * '/nomRuta' => 'controlador#método'
  */
 $routes = array(
 	/* '/test' => 'test#index',
