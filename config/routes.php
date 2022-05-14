@@ -11,8 +11,6 @@
  * '/nomRuta' => 'controlador#método'
  */
 $routes = array(
-	/* '/test' => 'test#index',
-	'/check' => 'test#check', */
 	'/' => 'task#index',
 	'/index' => 'task#index',
 	'/create' => 'task#create',
