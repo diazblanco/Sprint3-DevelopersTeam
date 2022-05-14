@@ -10,7 +10,7 @@ class ModelTask extends Model{
         //file_get_contents : Transmite un fichero completo a una cadena
     }
 
-    //GETTER acceder al json
+    //GETTER
     public function getJsondb(){
         return $this->jsondb;
     }

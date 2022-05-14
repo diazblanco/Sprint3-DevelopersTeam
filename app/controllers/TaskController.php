@@ -2,14 +2,14 @@
 class TaskController extends ApplicationController{
 	//Controlador vista principal / index
 	public function indexAction(){
-		//require ROOT_PATH . '/app/models/ModelTask.php';
+		require ROOT_PATH . '/app/models/ModelTask.php';
 		$viewScript="header.phtml";
 		$this->view->render($viewScript);
 
 		$model = new ModelTask();
 		$tasksList = $model->getJsondb();
 
-		require ROOT_PATH . '/app/views/scripts/task/index.phtml';
+		require ROOT_PATH . '/app/views/scripts/task/index.php';
 	}
 
     //Controlador vista crear tarea

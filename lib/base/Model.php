@@ -11,7 +11,7 @@ class Model
 	public function __construct()
 	{
 		// parses the settings file
-		$settings = parse_ini_file(ROOT_PATH . '/config/settings.ini', true);
+		$settings = parse_ini_file(ROOT_PATH . '/config/settings.ini', true); //parse_ini_file : analiza un fichero de configuración
 		
 		// starts the connection to the database
 		$this->_dbh = new PDO(
