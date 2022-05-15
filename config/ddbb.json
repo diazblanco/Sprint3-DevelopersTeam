@@ -1,26 +1,42 @@
 [
     {
-        "nomtasca" : "Tasca 1",
-        "nomusuari" : "Irene",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 1
+        "nomtasca": "Tasca 1",
+        "nomusuari": "Irene",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 1
     },
     {
-        "nomtasca" : "Tasca 2",
-        "nomusuari" : "Marc",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 2
+        "nomtasca": "Tasca 2",
+        "nomusuari": "Marc",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 2
     },
     {
-        "nomtasca" : "Tasca 3",
-        "nomusuari" : "Arlet",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 3
+        "nomtasca": "Tasca 3",
+        "nomusuari": "Arlet",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 3
+    },
+    {
+        "nomtasca": "comprar",
+        "nomusuari": "Ramona",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T13:22",
+        "horafinal": "2022-05-15T15:22",
+        "id": 4
+    },
+    {
+        "nomtasca": "Ladrar",
+        "nomusuari": "Leia",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T13:27",
+        "horafinal": "",
+        "id": 5
     }
 ]
