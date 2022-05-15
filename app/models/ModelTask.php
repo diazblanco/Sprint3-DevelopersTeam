@@ -66,7 +66,6 @@ class ModelTask extends Model{
 
    /*  public function addTask($form){
         $tasksList = $this->getJsondb(); //almaceno el contenido el json en formato array
-
         $tasksList[] = $form; //añado a la bbdd el array que llega del form
         $this->returnJson($tasksList); //paso la info en formato array a formato json
     } */
