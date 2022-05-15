@@ -1,26 +1,82 @@
 [
     {
-        "nomtasca" : "Tasca 1",
-        "nomusuari" : "Irene",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 1
+        "nomtasca": "Tasca 1",
+        "nomusuari": "Irene",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 1
     },
     {
-        "nomtasca" : "Tasca 2",
-        "nomusuari" : "Marc",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 2
+        "nomtasca": "Tasca 2",
+        "nomusuari": "Marc",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 2
     },
     {
-        "nomtasca" : "Tasca 3",
-        "nomusuari" : "Arlet",
-        "estattasca" : "Per fer",
-        "horainici" : "04-05-2022 12:12",
-        "horafinal" : "05-05-2022 16:12",
-        "id" : 3
+        "nomtasca": "Tasca 3",
+        "nomusuari": "Arlet",
+        "estattasca": "Per fer",
+        "horainici": "04-05-2022 12:12",
+        "horafinal": "05-05-2022 16:12",
+        "id": 3
+    },
+    {
+        "nomtasca": "comprar",
+        "nomusuari": "Ramona",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T13:22",
+        "horafinal": "2022-05-15T15:22",
+        "id": 4
+    },
+    {
+        "nomtasca": "Ladrar",
+        "nomusuari": "Leia",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T13:27",
+        "horafinal": "",
+        "id": 5
+    },
+    {
+        "nomtasca": "bajar pelis",
+        "nomusuari": "Marc",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T09:40",
+        "horafinal": "",
+        "id": 6
+    },
+    {
+        "nomtasca": "fer dinar",
+        "nomusuari": "irene",
+        "estattasca": "Per fer",
+        "horainici": "2022-05-15T14:17",
+        "horafinal": "2022-05-15T15:18",
+        "id": 7
+    },
+    {
+        "nomtasca": "Dormir",
+        "nomusuari": "Leia",
+        "estattasca": "En progr\u00e8s",
+        "horainici": "2022-05-15T09:23",
+        "horafinal": "2022-05-15T14:23",
+        "id": 8
+    },
+    {
+        "nomtasca": "comprar",
+        "nomusuari": "Irene",
+        "estattasca": "Finalitzada",
+        "horainici": "2022-05-15T13:24",
+        "horafinal": "2022-05-15T14:24",
+        "id": 9
+    },
+    {
+        "nomtasca": "camping",
+        "nomusuari": "irene",
+        "estattasca": "Per fer",
+        "horainici": "2022-05-15T14:27",
+        "horafinal": "",
+        "id": 10
     }
 ]

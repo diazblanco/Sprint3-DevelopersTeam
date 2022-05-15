@@ -1,8 +1,9 @@
-<?php 
+<?php
+require ROOT_PATH . '/app/models/ModelTask.php';
+
 class TaskController extends ApplicationController{
 	//Controlador vista principal / index
 	public function indexAction(){
-		require ROOT_PATH . '/app/models/ModelTask.php';
 		$viewScript="header.phtml";
 		$this->view->render($viewScript);
 
@@ -16,7 +17,21 @@ class TaskController extends ApplicationController{
 	public function createAction(){
 		$viewScript="header.phtml";
 		$this->view->render($viewScript);
+		/* $model = new ModelTask();
+		$tasksList = $model->getJsondb();
+		var_dump($tasksList); */
 	}
+
+	//Recoge la info que llega del form para poder enviarla al modelo, que será el que tenga acceso para añadir la nueva tarea a la bbdd
+	public function newAction(){
+		if ($_SERVER['REQUEST_METHOD'] == 'POST'){ //Si se está recogiendo la info del form:
+			$model = new ModelTask();
+			$model->addTask($_POST['nomtasca'],$_POST['nomusuari'],$_POST['estattasca'],$_POST['horainici'],$_POST['horafinal']);
+		}
+		header('Location: /phpInitialDemo/web/index');
+	}
+	
+
 
     //Controlador vista actualizar tarea
 	public function updateAction(){
@@ -25,10 +40,3 @@ class TaskController extends ApplicationController{
 	}
 
 }
-
-
-
-//var_dump(WEB_ROOT);
-//echo "WEB_ROOT= " . WEB_ROOT ."<br>"; //WEB_ROOT= /phpInitialDemo/web
-//echo "ROOT_PATH= " . ROOT_PATH ."<br>"; //ROOT_PATH= /Applications/MAMP/htdocs/phpInitialDemo
-//echo "CMS_PATH= " . CMS_PATH ."<br>"; //CMS_PATH= /Applications/MAMP/htdocs/phpInitialDemo/lib/base/
