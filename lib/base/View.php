@@ -65,7 +65,7 @@ class View
 	  else {
   		// includes the current view, which uses the "$this->content()" to output the 
   		// view script that was just rendered
-  		include(ROOT_PATH . '/app/views/layouts/' . $this->_getLayout() . '.phtml');
+  		include(ROOT_PATH . '/app/views/layouts/' . $this->_getLayout() . '.phtml'); //dejar un index.html sin nada para que no duplique contenido
 	  }
 	}
 	
