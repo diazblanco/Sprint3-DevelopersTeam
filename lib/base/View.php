@@ -73,7 +73,7 @@ class View
 	 * Renders the given data as json
 	 * @param mixed $data
 	 */
-	public function renderJson($data)
+	public function renderJson($data) //método para convertir la tarea que está en formato array a formato json
 	{
 	  $this->disableView();
 	  $this->disableLayout();
