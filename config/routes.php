@@ -16,4 +16,5 @@ $routes = array(
 	'/create' => 'task#create',
 	'/update' => 'task#update',
 	'/new' => 'task#new', //ruta sin vista, sólo llama al método
+	'/edit' => 'task#edit', //ruta sin vista, sólo llama al método
 );
