@@ -78,14 +78,13 @@
                         </td>
                     <!-- botón atualizar--> 
                     <td class="text-sm font-medium leading-5 text-center whitespace-no-wrap border-b border-gray-200 ">
-                        <form action="update" method="post"> <!--hacer esto mismo con bucle-->
+                        <form action="update" method="post">
                             <input type="hidden" name='nomtasca' value="<?php echo $task['nomtasca']; ?>">
                             <input type="hidden" name='nomusuari' value="<?php echo $task['nomusuari']; ?>">
                             <input type="hidden" name='estattasca' value="<?php echo $task['estattasca']; ?>">
                             <input type="hidden" name='horainici' value="<?php echo $task['horainici']; ?>">
                             <input type="hidden" name='horafinal' value="<?php echo $task['horafinal']; ?>">
                             <input type="hidden" name='id' value="<?php echo $task['id']; ?>">
-                            <!-- <input type="hidden" name='idEdit' value="edit"> -->
                             <button>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-cyan-700 hover:text-cyan-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
@@ -95,7 +94,7 @@
                     </td>
                     <!-- botón eliminar -->
                         <td class="text-sm font-medium leading-5 whitespace-no-wrap border-b border-gray-200 ">
-                            <form href="delete" method="post">
+                            <form action="delete" method="post">
                             <input type="hidden" name='id' value="<?php echo $task['id']; ?>">
                             <button>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-rose-700 hover:text-rose-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
