@@ -40,12 +40,10 @@ class TaskController extends ApplicationController{
 
 	public function editAction(){
 		if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-			if(isset($_POST['id'])){
-				$model = new ModelTask();
-				//$model->updateTask();
-			}
-		header('Location: /phpInitialDemo/web/index');
+			$model = new ModelTask();
+			$model->updateTask($_POST['nomtasca'],$_POST['nomusuari'],$_POST['estattasca'],$_POST['horainici'],$_POST['horafinal'],$_POST['id']);
 		}
+		header('Location: /phpInitialDemo/web/index');
 	}
 
 }

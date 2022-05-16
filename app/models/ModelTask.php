@@ -22,12 +22,7 @@ class ModelTask extends Model{
     public function addTask($tasca, $usuari, $estat, $inici, $final){
         $tasksList = $this->getJsondb(); //almaceno el contenido el json en formato array
 			$form = [
-				'nomtasca' => $tasca,
-				'nomusuari' => $usuari,
-				'estattasca' => $estat,
-				'horainici' => $inici,
-				'horafinal' => $final,
-				'id' => '',
+				'nomtasca' => $tasca,'nomusuari' => $usuari,'estattasca' => $estat,'horainici' => $inici,'horafinal' => $final,'id' => '',
 			];
 			//Por usabilidad, id autoincrementable: incrementar en 1 el id de la última tarea de la bbdd y asignárselo al id de la tarea que se está creando. Si bbdd vacía, asigmanos valor 1
 			if(isset($tasksList)){ //Si hay datos en la bbdd
@@ -40,17 +35,34 @@ class ModelTask extends Model{
         $tasksList[] = $form; //añado a la bbdd el array que llega del form
         file_put_contents(ROOT_PATH . '/config/ddbb.json', json_encode($tasksList, JSON_PRETTY_PRINT));
     }
+    
+    public function updateTask($tasca, $usuari, $estat, $inici, $final, $id){
+        $tasksList = $this->getJsondb();
 
-
-
-
-    public function updateTask($id){
-
+        foreach ($tasksList as $key => $value) { 
+            if ($value['id'] == $id) { 
+                if(isset($tasca)){ 
+                    $tasksList[$key]['nomtasca'] = $tasca; 
+                } 
+                if(isset($usuari)){ 
+                    $tasksList[$key]['nomusuari'] = $usuari; 
+                } 
+                if(isset($estat)){ 
+                    $tasksList[$key]['estattasca'] = $estat; 
+                } 
+                if(isset($inici)){ 
+                    $tasksList[$key]['horainici'] = $inici; 
+                } 
+                if(isset($final)){ 
+                    $tasksList[$key]['horafinal'] = $final; 
+                } 
+                if(isset($id)){ 
+                    $tasksList[$key]['id'] = $id; 
+                } 
+            } 
+        } 
+       
+        file_put_contents(ROOT_PATH . '/config/ddbb.json', json_encode($tasksList, JSON_PRETTY_PRINT));
     }
 }
-
-
-
-
-
 ?>
