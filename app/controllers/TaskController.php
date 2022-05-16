@@ -45,5 +45,12 @@ class TaskController extends ApplicationController{
 		}
 		header('Location: /phpInitialDemo/web/index');
 	}
-
+	
+	public function deleteAction(){
+		if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+			$model = new ModelTask();
+			$model->deleteTask($_POST['id']);
+		}
+		header('Location: /phpInitialDemo/web/index');
+	}
 }

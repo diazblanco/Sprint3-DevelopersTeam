@@ -1,13 +1,5 @@
-[
-    {
-        "nomtasca": "merendar",
-        "nomusuari": "yo",
-        "estattasca": "En progr\u00e8s",
-        "horainici": "2022-05-16T17:54",
-        "horafinal": "",
-        "id": "1"
-    },
-    {
+{
+    "1": {
         "nomtasca": "Tasca 2",
         "nomusuari": "Marc",
         "estattasca": "Per fer",
@@ -15,20 +7,12 @@
         "horafinal": "05-05-2022 16:12",
         "id": 2
     },
-    {
+    "2": {
         "nomtasca": "Tasca 33",
         "nomusuari": "Arlet",
         "estattasca": "Per fer",
         "horainici": "2022-05-16T19:52",
         "horafinal": "2022-05-16T17:55",
         "id": "3"
-    },
-    {
-        "nomtasca": "comprar pan",
-        "nomusuari": "Ramona2",
-        "estattasca": "Per fer",
-        "horainici": "2022-05-15T13:22",
-        "horafinal": "2022-05-15T15:22",
-        "id": "4"
     }
-]
+}

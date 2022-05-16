@@ -64,5 +64,17 @@ class ModelTask extends Model{
        
         file_put_contents(ROOT_PATH . '/config/ddbb.json', json_encode($tasksList, JSON_PRETTY_PRINT));
     }
+
+    public function deleteTask($id){
+        $tasksList = $this->getJsondb();
+         
+        foreach ($tasksList as $key => $value) { 
+            if ($value['id'] == $id) { 
+                unset($tasksList[$key]);
+            } 
+        } 
+
+        file_put_contents(ROOT_PATH . '/config/ddbb.json', json_encode($tasksList, JSON_PRETTY_PRINT));
+    }
 }
 ?>
