@@ -31,12 +31,19 @@ class TaskController extends ApplicationController{
 		header('Location: /phpInitialDemo/web/index');
 	}
 	
-
-
     //Controlador vista actualizar tarea
 	public function updateAction(){
 		$viewScript="header.phtml";
 		$this->view->render($viewScript);
+		//var_dump($_POST);
+	}
+
+	public function editAction(){
+		if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+			$model = new ModelTask();
+			$model->updateTask($_POST['nomtasca'],$_POST['nomusuari'],$_POST['estattasca'],$_POST['horainici'],$_POST['horafinal'],$_POST['id']);
+		}
+		header('Location: /phpInitialDemo/web/index');
 	}
 
 }

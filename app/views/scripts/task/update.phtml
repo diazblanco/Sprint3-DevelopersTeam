@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Actualitzar tasca</title>
+    <title>Nova tasca</title>
     <script src="https://cdn.tailwindcss.com/?plugins=forms"></script>
   </head>
 
   <body>
-<!-- Actualitzar tasca -->
+<!-- Nova tasca -->
     <div>
       <div class="flex flex-col items-center min-h-screen pt-2 bg-cyan-50 sm:justify-center sm:pt-0">
         <div class="w-full px-16 py-10 mt-6 overflow-hidden bg-white rounded-lg lg:max-w-4xl">
@@ -21,7 +21,9 @@
           </div>
 
           <div class="w-full px-6 py-4 bg-white rounded shadow-md ring-1 ring-gray-900/10">
-            <form method="POST" action="#">
+            <form action="edit" method="POST">
+              <!-- id tasca -->
+              <input type="hidden" name="id" value="<?php echo $_POST['id'];?>">
               <!-- Nom tasca -->
               <div>
                 <label class="block text-sm font-bold text-gray-700" for="title">
@@ -29,7 +31,7 @@
                 </label>
                 <input
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-left focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  type="text" name="nomtasca" placeholder="Com es dirà la tasca" required/>
+                  type="text" name="nomtasca" value="<?php echo $_POST['nomtasca']; ?>" required/>
               </div>
               <!-- Tasca creada per -->
               <div>
@@ -38,7 +40,7 @@
                 </label>
                 <input
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-left focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  type="text" name="nomusuari" placeholder="Qui realitzarà la tasca" required/>
+                  type="text" name="nomusuari" value="<?php echo $_POST['nomusuari'];?>" required/>
               </div>
               <div>
                 <label class="block text-sm pt-5 font-bold text-gray-700" for="title">
@@ -46,10 +48,11 @@
                 </label>
                 <select
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-left focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  name="estattasca" required>
-                  <option value="saab">Per fer</option>
-                  <option value="opel">En progrès</option>
-                  <option value="audi">Finalitzada</option>
+                  name="estattasca" value="<?php echo $_POST['estattasca'];?>" required>
+                  <option value="Per fer"><?php echo $_POST['estattasca'];?></option>
+                  <option value="Per fer">Per fer</option>
+                  <option value="En progrès">En progrès</option>
+                  <option value="Finalitzada">Finalitzada</option>
                 </select>
               </div>
               <!-- Hora inici -->
@@ -59,7 +62,7 @@
                 </label>
                 <input
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-left focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  type="datetime-local" name="horainici" placeholder="A quina hora s'inicia la tasca" required/>
+                  type="datetime-local" name="horainici" value="<?php echo $_POST['horainici'];?>" required/>
               </div>
               <!-- Hora final -->
               <div>
@@ -68,13 +71,13 @@
                 </label>
                 <input
                   class="block w-full mt-1 border-gray-300 rounded-md shadow-sm placeholder:text-gray-400 placeholder:text-left focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                  type="datetime-local" name="horafinal" placeholder="A quina hora finalitza la tasca" />
+                  type="datetime-local" name="horafinal" value="<?php echo $_POST['horafinal'];?>" />
               </div>
               <div class="flex items-center justify-start mt-4 gap-x-2">
-                <button type="submit"
-                  class="px-4 py-2 rounded-md bg-cyan-700 text-white hover:bg-cyan-800 text-sm font-semibold  shadow-md focus:outline-none focus:border-gray-900 focus:ring ring-gray-300">
-                  Actualitzar
-                </button>
+                <input
+                  class="px-4 py-2 rounded-md bg-cyan-700 text-white hover:bg-cyan-800 text-sm font-semibold  shadow-md focus:outline-none focus:border-gray-900 focus:ring ring-gray-300"
+                  type="submit" value="Actualitzar">
+                </input>
               </div>
             </form>
           </div>
@@ -82,5 +85,9 @@
       </div>
     </div>
   </body>
-
 </html>
+
+
+<!-- <button type="submit" class="px-4 py-2 rounded-md bg-cyan-700 text-white hover:bg-cyan-800 text-sm font-semibold  shadow-md focus:outline-none focus:border-gray-900 focus:ring ring-gray-300">
+  Crear
+</button> -->
